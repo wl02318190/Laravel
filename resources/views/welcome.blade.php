@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    歡迎使用 Laravel
+                    Laravel妳好
                 </div>
 
                 <div class="links">
