@@ -1,8 +1,11 @@
 @extends('layouts.master')
 
 @section('title','歡迎來到Lu的Laravel世界')
- 
+@section('nav_home','active')
 @section('content')
+
+    
+
 <!--內容content-->
   <section class="page-section clearfix">
     <div class="container">

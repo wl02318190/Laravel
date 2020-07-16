@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title','歡迎來到Lu的Laravel世界')
-
+@section('nav_about','active')
 @section('content')
   <section class="page-section about-heading">
     <div class="container">

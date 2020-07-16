@@ -7,18 +7,18 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active px-lg-4">
+          <li class="nav-item @yield('nav_home') px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{{route('home')}}">介紹
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item @yield('nav_about') px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{{route('about')}}">關於我</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item @yield('nav_products') px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{{route('products')}}">經歷</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item @yield('nav_store') px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{{route('store')}}">技能</a>
           </li>
         </ul>
