@@ -28,3 +28,7 @@ Route::get('products', function () {
 Route::get('store', function () {
     return view('store');
 })->name('store');
+
+Route::get('test', function () {
+    return view('test');
+});
