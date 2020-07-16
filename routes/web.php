@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{name?}', function ($name = 'Lu') {
-    return view('welcome',['name' => $name]);
-});
+Route::get('/', function () {
+    return view('index');
+})->name('home');
+
+Route::get('about', function () {
+    return view('about');
+})->name('about');
+ 
+Route::get('products', function () {
+    return view('products');
+})->name('products');
+
+Route::get('store', function () {
+    return view('store');
+})->name('store');
