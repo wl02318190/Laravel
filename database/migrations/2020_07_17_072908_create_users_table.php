@@ -14,9 +14,11 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->integer('price')->unsigned()->nullable()->default(12);
+            $table->increments('id'); //建立ID欄位
+            $table->string('username');//建立帳號欄位
+            $table->string('password');//建立密碼欄位
+            $table->rememberToken();//建立認證欄位->目的用於"記住我"這個功能
+            $table->timestamps();//建立時間戳
         });
     }
 
