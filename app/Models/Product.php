@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $table = 'product'; //指定為product這個表單
-    protected $timestamps = false;//關閉時間戳
+    protected $table = 'products'; //指定為products這個表單
+    public $timestamps = false;//關閉時間戳
 
 }

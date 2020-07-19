@@ -1,8 +1,10 @@
-<?php
-use App\Product;
-$products = App\Product::all();  //SQl指令 all代表取出全部
-foreach ($products as $data) {
-    echo $data->name;   //取出名字
-    echo $data->price;  //取出price
-    echo "<br>";        //換行
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
+</head>
+<body>
+  <textarea>Next, use our Get Started docs to setup Tiny!</textarea>
+</body>
+</html>

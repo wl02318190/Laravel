@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Website extends Model
 {
     protected $table = 'website'; //指定為website這個表單
-    protected $timestamps = false;//關閉時間戳
+    public $timestamps = false;//關閉時間戳
 }
