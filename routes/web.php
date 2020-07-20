@@ -12,8 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function (){
-    return view('welcome');
+
+Route::get('/', 'Frontend\HomeController@index')->name('home');
+Route::get('about', 'Frontend\AboutController@index')->name('about');
+
+Route::get('products', 'Frontend\ProductController@index')->name('products');
+
+Route::get('store', 'Frontend\StoreController@index')->name('store');
+
+Route::get('/admin/login', function (){
+    return view('backend.login');
 });
 
 //登入
@@ -41,7 +49,7 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function() {
     Route::get('about', 'Backend\AboutController@edit')->name('about.edit');
     Route::post('about', 'Backend\AboutController@update')->name('about.update');
  
-    // Product的增刪改查還有index頁面
+    // Product的增刪改查還有index頁面，排除show這個功能
     Route::resource('product', 'Backend\ProductController', ['except'=> ['show']]);
  
     // Store的更新

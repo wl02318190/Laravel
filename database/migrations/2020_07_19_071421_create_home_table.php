@@ -16,7 +16,6 @@ class CreateHomeTable extends Migration
         Schema::create('home', function (Blueprint $table) {
             $table->increments('id');
             $table->text('content_1');    // 相當於 TEXT 欄位
-            $table->text('content_2');
             $table->string('image');      // 用來存image路徑的欄位
         
         });

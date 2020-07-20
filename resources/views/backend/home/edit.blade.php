@@ -18,11 +18,6 @@
                 <textarea class="form-control" type="text" name="content_1" rows="5">@isset($home) {{$home->content_1}} @endisset</textarea>
             </div>
 
-            <div class="form-group"><!--表單-->
-                <label for="content_2">首頁文字區域 2</label><!--輸入框標題 for=與哪個intput綁定-->
-                <!--tinymce的文字編輯器 將輸入內容新增至home這個資料表裡的content_2欄位 並確認該輸入框是否有內容-->
-                <textarea class="form-control" type="text" name="content_2" rows="5">@isset($home) {{$home->content_2}} @endisset</textarea>
-            </div>
 
             <div class="form-group row"><!--表單 row=轉成水平表單-->
                 <label class="col-sm-2 col-form-label" for="image">圖片</label><!--輸入框標題 for=與哪個intput綁定-->

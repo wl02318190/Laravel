@@ -21,14 +21,6 @@
             </div>
 
             <div class="form-group row"><!--表單-->
-                <label class="col-sm-2 col-form-label" for="subtitle">網站子標題</label><!--輸入框標題 for=與哪個intput綁定-->
-                <div class="col-sm-10"><!--欄 10等分-->
-                    <!--輸入框 isset用來確認值是否存在-->
-                    <input class="form-control" type="text" name="subtitle" value="@isset($website) {{$website->subtitle}} @endisset">
-                </div>
-            </div>
-
-            <div class="form-group row"><!--表單-->
                 <label class="col-sm-2 col-form-label" for="footer">網站頁尾文字</label><!--輸入框標題 for=與哪個intput綁定-->
                 <div class="col-sm-10"><!--欄 10等分-->
                     <!--輸入框 isset用來確認值是否存在-->

@@ -25,7 +25,6 @@ class WebsiteController extends Controller
             $website = new Website; // 沒有資料 -> 新增
         }
         $website->title = $request->input('title');//新增title欄位的輸入值為inputname='title'所獲得的值，值由使用者輸入
-        $website->subtitle = $request->input('subtitle');//新增subtitle欄位的輸入值為inputname='subtitle'所獲得的值，值由使用者輸入
         $website->footer = $request->input('footer');//新增footer欄位的輸入值為inputname='footer'所獲得的值，值由使用者輸入
         $website->save();//新增
         return redirect()->route('admin.website.edit');//重新導回admin.website.edit

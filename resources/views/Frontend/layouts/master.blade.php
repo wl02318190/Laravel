@@ -2,7 +2,6 @@
 <html lang="zh-TW">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -20,21 +19,19 @@
   <!-- Custom styles for this template -->
   <link href="{{ asset('css/business-casual.min.css') }}" rel="stylesheet">
 
+
 </head>
 
 <body>
-    @include('layouts.header')
-
-    @include('layouts.navbar')
+  
+    @include('Frontend.layouts.header')
+    @include('Frontend.layouts.navbar')
 
     @yield('content')
 
-    @include('layouts.footer')
+    @include('Frontend.layouts.footer')
 
-  <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">A Free Bootstrap 4 Business Theme</span>
-    <span class="site-heading-lower">Business Casual</span>
-  </h1>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="{{ asset('jquery/jquery.min.js') }}"></script>

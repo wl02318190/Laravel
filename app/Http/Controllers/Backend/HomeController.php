@@ -40,7 +40,6 @@ class HomeController extends Controller
             $file->move($path, $fileName);//移動fileName這個圖片的位置到path
         }
         $home->content_1 = $request->input('content_1');//新增content_1欄位的輸入值為inputname='content_1'所獲得的值，值由使用者輸入
-        $home->content_2 = $request->input('content_2');//新增content_2欄位的輸入值為inputname='content_2'所獲得的值，值由使用者輸入
         if ($fileName) {//如果有上傳圖片
             $home->image = $fileName;//資料庫欄位image的值新增為fileName
         }

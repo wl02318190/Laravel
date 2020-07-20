@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('Frontend.layouts.master')
 
 @section('title','歡迎來到Lu的Laravel世界')
 @section('nav_store','active')
@@ -16,38 +16,37 @@
               <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Sunday
-                  <span class="ml-auto">Closed</span>
+                  <span class="ml-auto">{{ date('g:i A', strtotime($store->sun_open)) }}to{{ date('g:i A', strtotime($store->sun_close)) }}</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Monday
-                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                  <span class="ml-auto">{{ date('g:i A', strtotime($store->mon_open)) }}to{{ date('g:i A', strtotime($store->mon_close)) }}</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Tuesday
-                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                  <span class="ml-auto">{{ date('g:i A', strtotime($store->tue_open)) }}to{{ date('g:i A', strtotime($store->tue_close)) }}</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Wednesday
-                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                  <span class="ml-auto">{{ date('g:i A', strtotime($store->wed_open)) }}to{{ date('g:i A', strtotime($store->wed_close)) }}</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Thursday
-                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                  <span class="ml-auto">{{ date('g:i A', strtotime($store->thu_open)) }}to{{ date('g:i A', strtotime($store->thu_close)) }}</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Friday
-                  <span class="ml-auto">7:00 AM to 8:00 PM</span>
+                  <span class="ml-auto">{{ date('g:i A', strtotime($store->fri_open)) }}to{{ date('g:i A', strtotime($store->fri_close)) }}</span>
                 </li>
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Saturday
-                  <span class="ml-auto">9:00 AM to 5:00 PM</span>
+                  <span class="ml-auto">{{ date('g:i A', strtotime($store->sat_open)) }}to{{ date('g:i A', strtotime($store->sat_close)) }}</span>
                 </li>
               </ul>
               <p class="address mb-5">
                 <em>
-                  <strong>1116 Orchard Street</strong>
+                  <strong>{!!$store->address!!}</strong>
                   <br>
-                  Golden Valley, Minnesota
                 </em>
               </p>
               <p class="mb-0">
@@ -55,7 +54,7 @@
                   <em>Call Anytime</em>
                 </small>
                 <br>
-                (317) 585-8468
+                {!!$store->phone!!}
               </p>
             </div>
           </div>
