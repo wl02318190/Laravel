@@ -5,7 +5,7 @@
 @section('content')
   <section class="page-section about-heading">
     <div class="container">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{{asset('uploads/about/'.$about->image)}}" alt="">
+      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="https://imgur.com/Xxji4jF.png" alt="">
       <div class="about-heading-content">
         <div class="row">
           <div class="col-xl-9 col-lg-10 mx-auto">

@@ -12,6 +12,6 @@ class ProductController extends Controller
 {
     $products = Product::orderBy('id')->get();
     $website = Website::find(1);
-    return view('frontend.products', compact('products', 'website'));
+    return view('Frontend.products', compact('products', 'website'));
 }
 }
