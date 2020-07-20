@@ -12,7 +12,7 @@ class HomeController extends Controller
 {
     $home = Home::find(1);
     $website = Website::find(1);
-    return view('frontend.index', compact('home', 'website'));
+    return view('Frontend.index', compact('home', 'website'));
 
 }
 }
