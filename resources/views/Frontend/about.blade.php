@@ -11,8 +11,8 @@
           <div class="col-xl-9 col-lg-10 mx-auto">
             <div class="bg-faded rounded p-5">
               <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                <span class="section-heading-lower">About Our Cafe</span>
+                <span class="section-heading-upper">自傳</span>
+                <span class="section-heading-lower">About me</span>
               </h2>
               {!! $about->content !!}
             </div>

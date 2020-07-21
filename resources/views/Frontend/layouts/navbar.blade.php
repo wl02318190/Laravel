@@ -15,10 +15,10 @@
             <a class="nav-link text-uppercase text-expanded" href="{{route('about')}}">關於我</a>
           </li>
           <li class="nav-item @yield('nav_products') px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{{route('products')}}">經歷</a>
+            <a class="nav-link text-uppercase text-expanded" href="{{route('products')}}">經歷及作品</a>
           </li>
           <li class="nav-item @yield('nav_store') px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{{route('store')}}">技能</a>
+            <a class="nav-link text-uppercase text-expanded" href="{{route('store')}}">聯絡我</a>
           </li>
           <li class="nav-item @yield('nav_store') px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{{route('login')}}">登入</a>
